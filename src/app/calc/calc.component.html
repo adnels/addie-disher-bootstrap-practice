@@ -1,0 +1,15 @@
+<input [(ngModel)]="numOne" type="number" />
+
+
+<select [ngModel]="selectedOperation" (ngModelChange)="setOperation($event)">
+  <option> + </option>
+  <option> - </option>
+  <option> * </option>
+  <option> / </option>
+</select>
+
+<input [(ngModel)]="numTwo" type="number" />
+
+<button (click)="performOperation()" >=</button>
+
+<div>result: {{result}} </div>

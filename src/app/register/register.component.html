@@ -1,0 +1,8 @@
+<label>Username:
+  <input type="text" [(ngModel)]="username">
+</label>
+<label>Password:
+<input type="text" [(ngModel)]="password">
+</label>
+<button (click)="onRegister()">Register</button>
+<div *ngIf="result">{{result}}</div>
